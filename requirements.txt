@@ -1,0 +1,6 @@
+transformers==4.34.0
+datasets
+datasets[s3]==2.13.0
+sagemaker>=2.190.0
+peft
+deepspeed
