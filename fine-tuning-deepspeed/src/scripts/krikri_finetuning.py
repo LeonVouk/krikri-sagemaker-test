@@ -75,7 +75,7 @@ def create_peft_model(model, gradient_checkpointing=True, bf16=True):
 
     peft_config = LoraConfig(
         r=64,
-        lora_alpha=16,
+        lora_alpha=128,
         target_modules=modules,
         lora_dropout=0.1,
         bias="none",

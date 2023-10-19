@@ -25,6 +25,5 @@ if __name__ == "__main__":
     os.environ['SM_MASTER_ADDR'] = str(master_addr)
     os.environ['NCCL_SOCKET_IFNAME'] = 'eth0'
 
-    os.system("chmod +x ./s5cmd")
     os.system("chmod +x ./torch_launch.sh")
     os.system("/bin/bash -c ./torch_launch.sh")
